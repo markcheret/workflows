@@ -1,4 +1,4 @@
-name: Copy
+name: Copy workflows to cheret-de
 on: push
 jobs:
   copy:

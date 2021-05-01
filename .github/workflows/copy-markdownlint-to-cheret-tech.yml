@@ -1,4 +1,4 @@
-name: Copy
+name: Copy markdownlint to cheret-tech
 on: push
 jobs:
   copy:

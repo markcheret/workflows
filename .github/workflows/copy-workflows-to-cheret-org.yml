@@ -1,4 +1,4 @@
-name: Copy
+name: Copy workflows to cheret-org
 on: push
 jobs:
   copy:

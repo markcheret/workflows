@@ -1,4 +1,4 @@
-name: Copy
+name: Copy cspell to cheret-tech
 on: push
 jobs:
   copy:
