@@ -8,8 +8,8 @@ jobs:
       uses: andstor/copycat-action@v3
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: /.
-        dst_path: /.github/workflows/
+        src_path: "."
+        dst_path: "/.github/workflows/"
         dst_owner: markcheret
         dst_repo_name: cheret-org
         dst_branch: main
