@@ -14,7 +14,7 @@ jobs:
         dst_repo_name: cheret-org
         dst_branch: main
         src_branch: main
-        file_filter: *.yml
+        file_filter: "*.yml"
         username: markcheret
         email: mark@cheret.de
         commit_message: "workflows: update to latest version"
