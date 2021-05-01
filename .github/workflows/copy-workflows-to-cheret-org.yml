@@ -15,6 +15,7 @@ jobs:
         dst_branch: main
         src_branch: main
         file_filter: "*.yml"
+        exclude: "/.github/workflows/*"
         username: markcheret
         email: mark@cheret.de
         commit_message: "workflows: update to latest version"
