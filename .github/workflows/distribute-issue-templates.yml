@@ -8,7 +8,7 @@ jobs:
       uses: markcheret/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: "./.github/ISSUE_TEMPLATE/"
+        src_path: "/.github/ISSUE_TEMPLATE/"
         dst_path: "/.github/ISSUE_TEMPLATE/"
         dst_owner: markcheret
         dst_repo_name: cheret-de
@@ -22,7 +22,7 @@ jobs:
       uses: markcheret/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: "./.github/ISSUE_TEMPLATE/"
+        src_path: "/.github/ISSUE_TEMPLATE/"
         dst_path: "/.github/ISSUE_TEMPLATE/"
         dst_owner: markcheret
         dst_repo_name: cheret-org
@@ -36,7 +36,7 @@ jobs:
       uses: markcheret/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
-        src_path: "./.github/ISSUE_TEMPLATE/"
+        src_path: "/.github/ISSUE_TEMPLATE/"
         dst_path: "/.github/ISSUE_TEMPLATE/"
         dst_owner: markcheret
         dst_repo_name: cheret-tech
