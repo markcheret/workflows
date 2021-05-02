@@ -1,0 +1,48 @@
+name: distribute workflows
+on: push
+jobs:
+  copy-cheret-de:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy workflows to cheret-de
+      uses: markcheret/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: "."
+        dst_path: "/.github/workflows/"
+        dst_owner: markcheret
+        dst_repo_name: cheret-de
+        dst_branch: main
+        src_branch: main
+        file_filter: "*.yml"
+        exclude: ".github/workflows/*.yml"
+  copy-cheret-org:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy workflows to cheret-org
+      uses: markcheret/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: "."
+        dst_path: "/.github/workflows/"
+        dst_owner: markcheret
+        dst_repo_name: cheret-org
+        dst_branch: main
+        src_branch: main
+        file_filter: "*.yml"
+        exclude: ".github/workflows/*.yml"
+  copy-cheret-tech:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy workflows to cheret-tech
+      uses: markcheret/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: "."
+        dst_path: "/.github/workflows/"
+        dst_owner: markcheret
+        dst_repo_name: cheret-tech
+        dst_branch: main
+        src_branch: main
+        file_filter: "*.yml"
+        exclude: ".github/workflows/*.yml"
