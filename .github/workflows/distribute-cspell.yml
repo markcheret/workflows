@@ -1,0 +1,45 @@
+name: distribute cspell
+on: push
+jobs:
+  copy-cheret-de:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy cspell to cheret-de
+      uses: markcheret/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: "."
+        dst_path: "/."
+        dst_owner: markcheret
+        dst_repo_name: cheret-de
+        dst_branch: main
+        src_branch: main
+        file_filter: "cSpell.json"
+  copy-cheret-org:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy cspell to cheret-org
+      uses: markcheret/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: "."
+        dst_path: "/."
+        dst_owner: markcheret
+        dst_repo_name: cheret-org
+        dst_branch: main
+        src_branch: main
+        file_filter: "cSpell.json"
+  copy-cheret-tech:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy cspell to cheret-tech
+      uses: markcheret/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: "."
+        dst_path: "/."
+        dst_owner: markcheret
+        dst_repo_name: cheret-tech
+        dst_branch: main
+        src_branch: main
+        file_filter: "cSpell.json"
