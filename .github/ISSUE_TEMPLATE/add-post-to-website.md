@@ -14,7 +14,7 @@ assignees: markcheret
 - Date: dd/mm/YYYY
 
 - [] Add pictures
-- [] Add video
+- [] Link video with markdown shortcode
 
 ### Description
 
