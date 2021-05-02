@@ -1,10 +1,10 @@
-name: distribute cspell
+name: distribute markdownlint
 on: push
 jobs:
   copy-cheret-de:
     runs-on: ubuntu-latest
     steps:
-    - name: copy cspell to cheret-de
+    - name: copy markdownlint to cheret-de
       uses: markcheret/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
@@ -14,11 +14,11 @@ jobs:
         dst_repo_name: cheret-de
         dst_branch: main
         src_branch: main
-        file_filter: "cSpell.json"
+        file_filter: "*.markdownlint"
   copy-cheret-org:
     runs-on: ubuntu-latest
     steps:
-    - name: copy cspell to cheret-org
+    - name: copy markdownlint to cheret-org
       uses: markcheret/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
@@ -28,11 +28,11 @@ jobs:
         dst_repo_name: cheret-org
         dst_branch: main
         src_branch: main
-        file_filter: "cSpell.json"
+        file_filter: "*.markdownlint"
   copy-cheret-tech:
     runs-on: ubuntu-latest
     steps:
-    - name: copy cspell to cheret-tech
+    - name: copy markdownlint to cheret-tech
       uses: markcheret/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
@@ -42,4 +42,4 @@ jobs:
         dst_repo_name: cheret-tech
         dst_branch: main
         src_branch: main
-        file_filter: "cSpell.json"
+        file_filter: "*.markdownlint"
