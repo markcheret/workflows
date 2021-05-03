@@ -9,7 +9,7 @@ jobs:
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: ".github/ISSUE_TEMPLATE/"
-        dst_path: "/.github/ISSUE_TEMPLATE/"
+        dst_path: "/.github/"
         dst_owner: markcheret
         dst_repo_name: cheret-de
         dst_branch: main
@@ -23,7 +23,7 @@ jobs:
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: ".github/ISSUE_TEMPLATE/"
-        dst_path: "/.github/ISSUE_TEMPLATE/"
+        dst_path: "/.github/"
         dst_owner: markcheret
         dst_repo_name: cheret-org
         dst_branch: main
@@ -37,7 +37,7 @@ jobs:
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: ".github/ISSUE_TEMPLATE/"
-        dst_path: "/.github/ISSUE_TEMPLATE/"
+        dst_path: "/.github/"
         dst_owner: markcheret
         dst_repo_name: cheret-tech
         dst_branch: main
