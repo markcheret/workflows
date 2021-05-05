@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: copy issue-templates to cheret-de
-      uses: markcheret/copycat-action@v3.2.4
+      uses: andstor/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: ".github/ISSUE_TEMPLATE/"
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: copy issue-templates to cheret-org
-      uses: markcheret/copycat-action@v3.2.4
+      uses: andstor/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: ".github/ISSUE_TEMPLATE/"
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: copy issue-templates to cheret-tech
-      uses: markcheret/copycat-action@v3.2.4
+      uses: andstor/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: ".github/ISSUE_TEMPLATE/"
