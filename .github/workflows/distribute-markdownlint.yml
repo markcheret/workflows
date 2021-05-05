@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: copy markdownlint to cheret-de
-      uses: markcheret/copycat-action@v3.2.4
+      uses: andstor/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: "."
@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: copy markdownlint to cheret-org
-      uses: markcheret/copycat-action@v3.2.4
+      uses: andstor/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: "."
@@ -33,7 +33,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: copy markdownlint to cheret-tech
-      uses: markcheret/copycat-action@v3.2.4
+      uses: andstor/copycat-action@v3.2.4
       with:
         personal_token: ${{ secrets.PERSONAL_TOKEN }}
         src_path: "."
