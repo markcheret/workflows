@@ -19,8 +19,8 @@ jobs:
         curl -s https://api.codenotary.io/authenticate/$CHECKSUM?org=vchain.us | grep -q :0
         chmod +x /tmp/vcn
      - name: "VCN Login"
-       run: VCN_OTP_EMPTY="true" && VCN_USER="${{secrets.CODENOTARY_USER}}" && VCN_PASSWORD="${{secrets.CODENOTARY_PASS}}" && /tmp/vcn login
+       run: export VCN_OTP_EMPTY="true" && export VCN_USER="${{secrets.CODENOTARY_USER}}" && export VCN_PASSWORD="${{secrets.CODENOTARY_PASS}}" && /tmp/vcn login
      - name: "Notarize Git Commit"
-       run: VCN_NOTARIZATION_PASSWORD="${{secrets.CODENOTARY_PASS}}" /tmp/vcn n -p --attr GitHub="${GITHUB_SHA:0:7}" git://$GITHUB_WORKSPACE
+       run: export VCN_NOTARIZATION_PASSWORD="${{secrets.CODENOTARY_PASS}}" && /tmp/vcn n -p --attr GitHub="${GITHUB_SHA:0:7}" git://$GITHUB_WORKSPACE
      - name: Verify
        uses: vchain-us/verify-action@master
