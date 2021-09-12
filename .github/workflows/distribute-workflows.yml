@@ -31,7 +31,7 @@ jobs:
         src_branch: main
         file_filter: "*.yml"
         exclude: ".github/workflows/*.yml"
-  copy-cheret-tech:
+  copy-popcornscience:
     runs-on: ubuntu-latest
     steps:
     - name: copy workflows to cheret-tech
