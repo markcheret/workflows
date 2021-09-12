@@ -46,3 +46,18 @@ jobs:
         src_branch: main
         file_filter: "*.yml"
         exclude: ".github/workflows/*.yml"
+  copy-cheret-tech:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy workflows to popcornscience
+      uses: andstor/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: "."
+        dst_path: "/.github/workflows/"
+        dst_owner: markcheret
+        dst_repo_name: popcornscience
+        dst_branch: main
+        src_branch: main
+        file_filter: "*.yml"
+        exclude: ".github/workflows/*.yml"
