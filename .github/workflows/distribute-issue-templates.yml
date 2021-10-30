@@ -57,3 +57,17 @@ jobs:
         dst_branch: main
         src_branch: main
         file_filter: "*.md"
+  copy-popcornscience:
+    runs-on: ubuntu-latest
+    steps:
+    - name: copy issue-templates to gcp-backup-infra
+      uses: andstor/copycat-action@v3.2.4
+      with:
+        personal_token: ${{ secrets.PERSONAL_TOKEN }}
+        src_path: ".github/ISSUE_TEMPLATE/"
+        dst_path: "/.github/"
+        dst_owner: markcheret
+        dst_repo_name: gcp-backup-infra
+        dst_branch: main
+        src_branch: main
+        file_filter: "*.md"
