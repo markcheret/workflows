@@ -57,7 +57,7 @@ jobs:
         dst_branch: main
         src_branch: main
         file_filter: "*.md"
-  copy-popcornscience:
+  copy-gcp-backup-infra:
     runs-on: ubuntu-latest
     steps:
     - name: copy issue-templates to gcp-backup-infra
